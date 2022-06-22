@@ -1,0 +1,37 @@
+{
+  "name": "aegis-registry",
+  "version": "1.0.0",
+  "repository": "https://github.com/module-federation/aegis-registry.git",
+  "author": "tysonrm <tyson.midboe@gmail.com>",
+  "module": "src/noop.js",
+  "license": "MIT",
+  "dependencies": {
+    "@assemblyscript/loader": "^0.19.10",
+    "axios": "^0.21.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "kafkajs": "^1.14.0",
+    "nanoid": "^3.1.12",
+    "smartystreets-javascript-sdk": "^1.6.0",
+    "square": "^8.1.0",
+    "ws": "^7.5.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "assemblyscript": "^0.19.10",
+    "babel-loader": "^8.2.2",
+    "esm": "^3.2.25",
+    "express-cli": "0.0.1",
+    "mocha": "^8.2.0",
+    "nodemon": "^2.0.6",
+    "py-loader": "^0.3.1",
+    "snowpack": "^3.4.0",
+    "webpack": "5.0.0-beta.28",
+    "webpack-cli": "^3.3.12",
+    "webpack-node-externals": "^2.5.2"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  }
+}
