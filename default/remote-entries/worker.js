@@ -20,8 +20,8 @@ exports.worker = [
     path: __dirname,
     type: 'model',
     worker: 'worker.js',
-    importRemote () {
-      return import('workers/examples/simple')
-    }
+    // importRemote () {
+    //   return import('workers/examples/simple')
+    // }
   }
 ]

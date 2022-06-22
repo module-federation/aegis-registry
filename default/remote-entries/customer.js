@@ -12,8 +12,8 @@ exports.customer = [
     filedir: 'dist',
     branch: 'customer',
     path: __dirname,
-    type: 'model',
-    importRemote: async () => import('customer/models')
+    type: 'model'
+    //  importRemote: async () => import('customer/models')
   },
   {
     name: 'adapters',
@@ -23,8 +23,8 @@ exports.customer = [
     filedir: 'dist',
     branch: 'customer',
     path: __dirname,
-    type: 'adapter',
-    importRemote: async () => import('customer/adapters')
+    type: 'adapter'
+    //  importRemote: async () => import('customer/adapters')
   },
   {
     name: 'services',
@@ -34,7 +34,7 @@ exports.customer = [
     filedir: 'dist',
     branch: 'customer',
     path: __dirname,
-    type: 'service',
-    importRemote: async () => import('customer/services')
+    type: 'service'
+    //  importRemote: async () => import('customer/services')
   }
 ]

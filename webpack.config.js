@@ -4,9 +4,9 @@ const httpNode = require('./webpack/http-node')
 
 var serverConfig = {
   target: httpNode,
-  entry: path.resolve('src/noop.js'),
+  entry: path.resolve(process.cwd(), 'src', 'noop.js'),
   output: {
-    path: path.resolve('dist'),
+    path: path.resolve(process.cwd(), 'dist'),
     publicPath:
       'https://api.github.com?owner=module-federation&repo=aegis-registry&filedir=dist&branch=main',
     libraryTarget: 'commonjs'
@@ -61,13 +61,13 @@ var serverConfig = {
       library: { type: 'commonjs-module' },
       filename: 'remoteEntry.js',
       exposes: {
-        './default': './default/remote-entries',
-        './order': './order/remote-entries',
-        './payment': './payment/remote-entries',
-        './shipping': './shipping/remote-entries',
-        './activation-01': './activation-01/remote-entries',
-        './multicast-grp-02': './multicast-grp-02/remote-entries',
-        './bldg-01': './bldg-01/remote-entries'
+        './default': './default/remote-entries'
+        // './order': './order/remote-entries',
+        // './payment': './payment/remote-entries',
+        // './shipping': './shipping/remote-entries',
+        // './activation-01': './activation-01/remote-entries',
+        // './multicast-grp-02': './multicast-grp-02/remote-entries',
+        // './bldg-01': './bldg-01/remote-entries'
       }
     })
   ]

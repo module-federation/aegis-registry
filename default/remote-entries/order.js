@@ -14,8 +14,8 @@ exports.order = [
     filedir: 'dist',
     branch: 'order',
     path: __dirname,
-    type: 'model',
-    importRemote: async () => import('order/models')
+    type: 'model'
+    //importRemote: async () => import('order/models')
   },
   {
     name: 'adapters',
@@ -25,8 +25,8 @@ exports.order = [
     filedir: 'dist',
     branch: 'order',
     path: __dirname,
-    type: 'adapter',
-    importRemote: async () => import('order/adapters')
+    type: 'adapter'
+    // importRemote: async () => import('order/adapters')
   },
   {
     name: 'services',
@@ -36,7 +36,7 @@ exports.order = [
     filedir: 'dist',
     branch: 'order',
     path: __dirname,
-    type: 'service',
-    importRemote: async () => import('order/services')
+    type: 'service'
+    // importRemote: async () => import('order/services')
   }
 ]

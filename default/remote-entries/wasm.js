@@ -4,9 +4,9 @@
  * @typedef {import("../remote-entries-type").remoteEntry} entries
  */
 
-const {
-  importWebAssembly
-} = require('@module-federation/aegis').adapters.webassembly
+// const {
+//   importWebAssembly
+// } = require('@module-federation/aegis').adapters.webassembly
 
 /** @type {entries[]} */
 exports.wasm = [
@@ -19,9 +19,9 @@ exports.wasm = [
     branch: 'main',
     wasm: true,
     path: __dirname,
-    type: 'model',
-    importRemote () {
-      return importWebAssembly(this)
-    }
+    type: 'model'
+    // importRemote () {
+    //   return importWebAssembly(this)
+    // }
   }
 ]

@@ -24,8 +24,8 @@ exports.order = [
     path: __dirname,
     wasm: true,
     type: 'model',
-    importRemote () {
-      return importPython(this)
-    }
+    // importRemote () {
+    //   return importPython(this)
+    // }
   }
 ]
